@@ -13,5 +13,5 @@ obj-y   +=  focaltech_ex_fun.o
 obj-y   +=  focaltech_Gesture.o
 obj-y   +=  focaltech_flash.o
 
-obj-y += ft_gesture_lib.a
+#obj-y += ft_gesture_lib.a
 
