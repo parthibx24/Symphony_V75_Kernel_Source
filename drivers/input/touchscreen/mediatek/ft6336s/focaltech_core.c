@@ -280,7 +280,7 @@ static struct i2c_board_info __initdata fts_i2c_tpd	={ I2C_BOARD_INFO("fts", (0x
 *******************************************************************************/
 struct i2c_client *fts_i2c_client 				= NULL;
  struct input_dev *fts_input_dev				=NULL;
-struct task_struct *thread 						= NULL;
+struct task_struct *tpthread 						= NULL;
 int up_flag									=0;
 int up_count									=0;
 static int tpd_flag 								= 0;
@@ -2271,10 +2271,10 @@ static int tpd_irq_registration(void)
 		}
 	#endif
 
-	thread = kthread_run(touch_event_handler, 0, TPD_DEVICE);
-	 if (IS_ERR(thread))
+	tpthread = kthread_run(touch_event_handler, 0, TPD_DEVICE);
+	 if (IS_ERR(tpthread))
 	{ 
-		  retval = PTR_ERR(thread);
+		  retval = PTR_ERR(tpthread);
 		  TPD_DMESG(TPD_DEVICE " failed to create kernel thread: %d\n", retval);
 	}
 
