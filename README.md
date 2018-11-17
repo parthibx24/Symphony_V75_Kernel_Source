@@ -1,6 +1,6 @@
 > This is 3.18.19+ MT6580 kernel source which is Fully stable for Symphony V75
 
-## Known information
+## Device drivers (based on v2800 defconfig)
 | Subsystem | Driver name | Availability | Working |
 |-----------|-------------|--------------|---------|
 | LCM driver #1 | `hx8394d_dsi_vdo_hlt_hsd_hd720` | Yes | Yes |
@@ -13,21 +13,17 @@
 | ALS/PS | `ltr553` | Yes | Yes |
 | Flash | `H8G1e` | Yes | Yes |
 | Lens #4 | `MAINAF,GAF001AF,FM50AF,GAF002AF` | Yes | Yes |
-| RAM | `1GB` | Yes | Yes |
 | Sound | `mtsndcard` | Yes | Yes |
 | Accdet | `mt6580-accdet` | Yes | Yes |
 | Other | `kd_camera_hw (i2c 0-0010)` | Yes | Yes |
 | Other | `kd_camera_hw_bus2 (i2c 0-0036)` | Yes | Yes |
 
-
 > Bugs :
-
->> * Touch not responding in Twrp {Working on it...}
-
-** Config name for V75_mt6580 --$   v2800_defconfig
+> *Touch not responding in Twrp with ft6336 driver {Working on it...}
 
 ## Acknowledgements
 
 (Credit)
-
- * [Parthib Rkr](https://github.com/parthibx24)
+ * [Md Naimur Rahman](https://github.com/Naimur9800)
+ * [parthibx24/inxpired](https://github.com/parthibx24)
+ 
