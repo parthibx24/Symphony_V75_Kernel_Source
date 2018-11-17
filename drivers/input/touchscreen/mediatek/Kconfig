@@ -52,6 +52,16 @@ config TOUCHSCREEN_MTK_FT5346I_V3750
        bool "FT5346I for Mediatek package"
        default n
 
+config TOUCHSCREEN_MTK_FT6336S
+	bool "FT633S for Mediatek package"
+	default n
+	help
+	  Say Y here if you have FT6336S touch panel.
+	  If unsure, say N.
+
+	  To compile this dirver as a module, choose M here: the
+	  module will be called.
+
 config TOUCHSCREEN_SYNAPTICS_S5250
         bool "synaptics 5250 for Mediatek package"
         default n
