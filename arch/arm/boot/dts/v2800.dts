@@ -515,7 +515,7 @@
 
 &i2c1 {
 	cap_touch@38 {
-		compatible = "mediatek,ft6xxx_touch";
+		compatible = "mediatek,cap_touch";
 		reg = <0x38>;
 		status = "okay";
 	};
